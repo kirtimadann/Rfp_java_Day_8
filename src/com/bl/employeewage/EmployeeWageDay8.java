@@ -1,22 +1,26 @@
 package com.bl.employeewage;
 
 public class EmployeeWageDay8 {
-    int EMP_IS_FULL_TIME = 1;
+    int is_part_time = 1;
+    int is_full_time = 2;
+    int Empoloyee_per_rate_hrs = 20;
 
-    void empwageUC2(){
+    void empwageUC3(){
 
-        int Empoloyee_per_rate_hrs = 20;
         int empperhrs= 0;
         int empwage = 0;
 
 
-        int employeecheck = (int)(Math.random() * 10 % 2);
+        int employeecheck = (int)(Math.random() * 10 % 3);
 
-        if (employeecheck == 1){
+        if (employeecheck == is_part_time){
 
+            empperhrs = 4;
+
+        } else if (employeecheck == is_full_time) {
             empperhrs = 8;
 
-        }else {
+        } else {
             empperhrs = 0;
         }
 
@@ -27,7 +31,7 @@ public class EmployeeWageDay8 {
     public static void main(String[] args) {
 
         EmployeeWageDay8 obj = new EmployeeWageDay8();
-        obj.empwageUC2();
+        obj.empwageUC3();
 
     }
 }
