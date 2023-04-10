@@ -1,6 +1,7 @@
 package com.bl.employeewage;
 
 public class EmployeeWageDay8 {
+
     int emp_is_full_time = 1;
 
 
